@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements.Experimental;
 
 public class PlayerWeapon : MonoBehaviour
 {
     [SerializeField] GameObject[] lasers;
     [SerializeField] RectTransform crosshair;
+    [SerializeField] Transform targetPoint;
+    [SerializeField] float targetDistance = 100;
     bool isFiring = false;
 
     void Start()
@@ -17,6 +18,7 @@ public class PlayerWeapon : MonoBehaviour
     {
         ProcessFiring();
         MoveCrosshair();
+        MoveTargetPoint();
     }
     public void OnFire(InputValue value)
     {
@@ -32,10 +34,16 @@ public class PlayerWeapon : MonoBehaviour
 
         }
     }
-    
+
 
     void MoveCrosshair()
     {
         crosshair.position = Input.mousePosition;
+    }
+    
+    void MoveTargetPoint()
+    {
+        Vector3 targetPointPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetDistance);
+        targetPoint.position = Camera.main.ScreenToWorldPoint(targetPointPosition);
     }
 }
