@@ -11,23 +11,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float controlPitchFactor = 18f;
     [SerializeField] float rotationSpeed = 10f;
 
-    ParticleSystem firingParticels;
+
 
     Vector2 movement;
-    bool isFiring = false;
 
-
-    void Start()
-    {
-        firingParticels = GetComponent<ParticleSystem>();
-
-    }
     
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
-        ProcessFiring();
     }
 
 
@@ -60,23 +52,4 @@ public class PlayerMovement : MonoBehaviour
         transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
-    void OnFire(InputValue value)
-    {
-        isFiring = value.isPressed;
-    }
-
-    void ProcessFiring ()
-    {
-        if (isFiring == true)
-        {
-            firingParticels.Play();
-            Debug.Log("Is Firing");
-        }
-
-        else if (isFiring == false)
-        {
-            firingParticels.Stop();
-            Debug.Log("Firing Stopped");
-        }
-    }
 }
