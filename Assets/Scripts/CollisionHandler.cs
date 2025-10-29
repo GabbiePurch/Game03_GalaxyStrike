@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] GameObject destroyVFX;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Hit " + other.name);
-        Debug.Log($"Hit {other.gameObject.name}");
+        Instantiate(destroyVFX, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
