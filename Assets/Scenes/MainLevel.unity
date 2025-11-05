@@ -198,6 +198,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a04b80157e470b4ca88dffd1d5f8e17, type: 3}
+--- !u!4 &177311277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
+  m_PrefabInstance: {fileID: 5022876841309537271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &212878199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2967821224905982530, guid: 0c1b905b6530a994ea3f2f3752a1669a, type: 3}
@@ -493,6 +498,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6838215899231085816, guid: ae40b38eaf594be4ca523ed3ba33bc4c, type: 3}
   m_PrefabInstance: {fileID: 640575403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &645638023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645638024}
+  m_Layer: 0
+  m_Name: Terrian
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &645638024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645638023}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 406.703, y: 70.8291, z: 228.56277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1669622439}
+  - {fileID: 177311277}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &654633586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,18 +1674,25 @@ PlayableDirector:
     - 31eaec590f1d3c14eb686f148f2f95b9: {fileID: 1736293396}
     - 8f17c3e6a378e4d42b6468fddb140706: {fileID: 1503802616}
     - 95f659345530e7942a58e61895bfc3b0: {fileID: 1748596506}
+    - 2a631cca4fec5ac4eb6830d3dba15dad: {fileID: 1736293396}
     - 00d0b6540bdae6a4fb4a36655a07f3fd: {fileID: 1736293396}
     - 5d80429d0e3f00943a5527fb097347ea: {fileID: 1402884050}
+    - c5c6927876e8ccc45bc349856f24a77f: {fileID: 1736293396}
     - 7959ce91f84f84a489a93214ce7f7785: {fileID: 1829379423}
+    - 9ce70d2fb32d4dc4abeb5a19f7c46ac9: {fileID: 1736293396}
     - 2e793615982b2ee4583416eab2aec152: {fileID: 1503802616}
+    - d38eee41e36652745b81ebb915eef565: {fileID: 1503802616}
     - 97a706cb6ccb27c4b892eecd0ac8c0a6: {fileID: 1402884050}
     - 40a5a807bfcb68f45891be918fe53992: {fileID: 640575405}
     - 7fa0c120d93861b439f430978b7c7223: {fileID: 1402884050}
     - 6e36618c4e6dbee46a18245904353483: {fileID: 1736293396}
     - 46e2101f1c7c6454a886dc3bb96f65f0: {fileID: 1402884050}
+    - c1078cdf08d9a874eac3a5f5b2c82297: {fileID: 1503802616}
     - 599f248293850294490d07a0a341efa0: {fileID: 1402884050}
     - 8d53b97d45cc88145b74acf43260cb2c: {fileID: 1503802616}
     - 08e0ad788e058dc4eb35be4a2add6d50: {fileID: 1736293396}
+    - e2ba57ce2a7af154b8c22dda47e64b11: {fileID: 1503802616}
+    - e975c86fd3a78b24588c44ba72d4ad4b: {fileID: 1503802616}
 --- !u!4 &1441941008
 Transform:
   m_ObjectHideFlags: 0
@@ -2197,6 +2242,11 @@ MonoBehaviour:
   - Struth!  Looks like the galaxy just got a little more safe.
   - Yeeeehaw!!  You did it!
   dialogueText: {fileID: 1402884051}
+--- !u!4 &1669622439 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
+  m_PrefabInstance: {fileID: 1153855248244683461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1736293396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,7 +2264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1736293397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2630,19 +2680,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 645638024}
     m_Modifications:
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -406.703
       objectReference: {fileID: 0}
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -70.8291
       objectReference: {fileID: 0}
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -228.56277
       objectReference: {fileID: 0}
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2650,15 +2700,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2297941087568636445, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2674,7 +2724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9152643789240910879, guid: ca0cc97334e594c48805a53b45105f4d, type: 3}
       propertyPath: m_Name
-      value: Terrain
+      value: Terrian 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2687,23 +2737,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 645638024}
     m_Modifications:
     - target: {fileID: 1260241104892722791, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_Name
-      value: Terrain_(-600.00, 0.00, 0.00)
+      value: Terrian 2
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -600
+      value: -1006.703
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.1
+      value: -59.729103
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -228.56277
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2711,15 +2761,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9156038049449457974, guid: 80d0b21888494be4da9a3e175d354d3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2801,8 +2851,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 1153855248244683461}
-  - {fileID: 5022876841309537271}
+  - {fileID: 645638024}
   - {fileID: 14752618944985491}
   - {fileID: 2141993016}
   - {fileID: 654633589}
