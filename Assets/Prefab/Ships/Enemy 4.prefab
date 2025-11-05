@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: hitPoints
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5086830991760998983, guid: c140d0749e26186468e59a2e35cdfc4e, type: 3}
+      propertyPath: scoreValue
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6182090622752595187, guid: c140d0749e26186468e59a2e35cdfc4e, type: 3}
