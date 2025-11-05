@@ -312,6 +312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3768005423039961187, guid: 13523636b315c77439ce49f3ed5452e2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4340735306293067744, guid: 13523636b315c77439ce49f3ed5452e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 427.4
@@ -841,7 +845,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -989,15 +993,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4340735306293067744, guid: 7e3799fd99910674ca3d9a8f0a2039db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 492.73648
+      value: 492.84
       objectReference: {fileID: 0}
     - target: {fileID: 4340735306293067744, guid: 7e3799fd99910674ca3d9a8f0a2039db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 115.89849
+      value: 110.22
       objectReference: {fileID: 0}
     - target: {fileID: 4340735306293067744, guid: 7e3799fd99910674ca3d9a8f0a2039db, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 263.41806
+      value: 263.37
       objectReference: {fileID: 0}
     - target: {fileID: 4340735306293067744, guid: 7e3799fd99910674ca3d9a8f0a2039db, type: 3}
       propertyPath: m_LocalRotation.w

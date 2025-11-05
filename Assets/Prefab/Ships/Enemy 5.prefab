@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1639038504451310848, guid: c140d0749e26186468e59a2e35cdfc4e, type: 3}
       propertyPath: m_Name
-      value: Enemy 4
+      value: Enemy 5
       objectReference: {fileID: 0}
     - target: {fileID: 3745975361928626770, guid: c140d0749e26186468e59a2e35cdfc4e, type: 3}
       propertyPath: m_Size.x
@@ -71,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 4290707281593361873, guid: c140d0749e26186468e59a2e35cdfc4e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.000000005097746
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086830991760998983, guid: c140d0749e26186468e59a2e35cdfc4e, type: 3}
+      propertyPath: hitPoints
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
